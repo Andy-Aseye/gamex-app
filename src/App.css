@@ -1,38 +1,232 @@
-.App {
-  text-align: center;
+.background {
+  background-image: url(wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Nav component CSS*/
+#logo {
+  width: 6em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav{
+display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.nav-link {
+  font-weight: 500;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.navbar-nav {
+  position: absolute;
+  right: 140px;
+
+}
+
+.navbar-toggler-icon {
+  z-index: 1;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+/*News component Css*/
+#news-area {
+  background-color: rgb(138, 29, 29);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.news-header {
+  font-family: 'Fredoka One', cursive;
+}
+
+.news-area {
+background-color: #5c1188;
+margin-top: 0px;
+}
+
+.smaller-card {
+  max-width: 18rem;
+}
+
+.card-update {
+  font-family: 'DM Serif Text', serif;
+}
+
+.card-text {
+  font-family: 'Source Serif 4', sans-serif;
+}
+
+.news-card {
+  background: #47146e;
+  color: azure;
+  border-radius: 6px;
+}
+
+/*Hero Component CSS*/
+.hero h1{
+  font-size: 90px;
+  font-family: 'Alfa Slab One', cursive;
+  color: #C710AF;
+}
+
+.hero h6{
+  font-size: 18px;
+  font-family: 'Source Serif 4', sans-serif;
+  color:rgb(180, 160, 160)
+}
+
+.column {
+  float: auto;
+  width: 50%;
+}
+
+/*Video component CSS*/
+.video-bg::after {
+  content: "";
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0.82;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .vidd {
+    height: 100vh;
+    object-fit: cover;
   }
+  
+  .video-header {
+    font-family: 'Alfa Slab One';
+    margin-top: 70px;
+  }
+  
+  .video-text {
+    font-family: 'Special Elite';
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+  
+  .available-text {
+    margin-bottom: 80px;
+    font-size: 2.2rem;
+    font-family: 'Alfa Slab One';
+  }
+  
+  .available-content {
+    margin-top: 150px;
+  }
+
+  .text-content {
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    z-index: 1;
+    color: azure;
+  }
+
+
+/*Trailer component CSS*/
+.trailer-header {
+  font-family: 'Alfa Slab One';
+}
+
+.trailer-area {
+  background: rgb(209, 208, 208);
+}
+
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+/*.box {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+
+.header-content {
+  position: absolute;
+  left: 20%;
+  top: 120%;
+}
+
+#video-BG {
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-aspect-ratio: 16/9)
+{
+  #video-BG {
+    width: 100%;
+    height: auto;
+  }
+}
+*/
+
+
+.discount-area{
+background: rgb(190, 5, 5);
+font-family: 'Alfa Slab One';
+}
+
+
+
+
+.game-gear {
+  width: 270px;
+}
+
+.container-fluid {
+width: 100%;
+}
+
+/*Media queries//Responsiveness*/
+@media (min-width: 344px) {  
+  
+}
+ 
+@media (max-width: 530px) {
+  .news-col { margin-top: 30px;}
+  .news-small { margin-left: 5%;}
+  .trailers {margin-top: 30px;  margin-left: 5%; width: 430px}
+  .column {width: 100%; padding-top: -20px;}
+  .hero h1{ font-size: 70px;}
+  .news-card {
+    width: 24rem;
+  }
+
+}
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (max-width: 768px) and (min-width: 530px) {  
+   .text-content{
+    position: absolute;
+    top: 95%;
+   }
+
+   /*#last-news-card {
+     display: none; 
+   }*/
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 1300px) and (min-width: 560px) { 
+  
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+
 }
